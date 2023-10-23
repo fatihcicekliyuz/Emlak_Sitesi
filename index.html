@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Linking external css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <!-- Importing google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/ios-filled/50/000000/v-symbol.png"
+      type="image/x-icon"
+    />
+    <title>Ufuk Emlak</title>
+
+  
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Nav bar / menu bar -->
+      <header class="row">
+        <div class="nav-head col-12">
+          <div class="logo-and-hamburger-container col-12">
+            <div class="logo-container">
+              <a href="./index.html" class="logo-link"
+                ><img
+                  class="logo"
+                  src="https://i.pinimg.com/originals/84/0e/95/840e95c91411fa024b9e1338c45dcf7b.png"
+                  alt="logo"
+                />
+                <h4 class="logo-head">UFUK EMLAK</h4>
+              </a>
+            </div>
+            <div class="hamburgerIcon">
+              <span id="openNavIcon" onclick="openNav()">&#9776;</span>
+            </div>
+          </div>
+          <nav id="navigationContainer">
+            <div class="closeNavIcon">
+              <span onclick="closeNav()">&times;</span>
+            </div>
+            <ul class="nav-item">
+              <a class="nav-link" href="#"><li class="nav-unit">ANASAYFA</li></a>
+ 
+              <a class="nav-link" href="./html/membership.html"
+                ><li class="nav-unit">HAKKIMIZDA</li></a
+              >
+              <a class="nav-link" href="./html/contact.html"
+                ><li class="nav-unit">İLETİŞİM</li></a
+              >
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+         <h1 class="page-header">
+          Öne Çıkan İlanlar
+         </h1>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>İlan Baslik</h4>
+            </div>
+            <div class="panel-body">
+              <img src="img/res.jpg" alt="">
+              <table class = "table table-striped" >
+                 <tbody class="">
+                  <tr>
+                    <th>Sat / Kir</th>
+                    <th class="table-bilgi">Kiralık</th>
+                  </tr>
+                  <tr>
+                    <th>Fiyat</th>
+                    <th class="table-bilgi">999 TL</th>
+                  </tr>
+                  <tr>
+                    <th>Alan m2</th>
+                    <th class="table-bilgi">99 m2</th>
+                  </tr>
+                  <tr>
+                    <th>İl</th>
+                    <th class="table-bilgi">İstanbul</th>
+                  </tr>
+                  <tr>
+                    <th>İlçe</th>
+                    <th class="table-bilgi">GOP</th>
+                  </tr>
+                 </tbody>
+              </table>
+              <a href="detay.php?ilan_id=<?=$ilanid?>" class="btn btn-primary btn-block panel-btn-detay">Tüm Detaylar</a>
+            </div>
+          </div>
+        </div>  
+
+                <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>İlan Baslik</h4>
+            </div>
+            <div class="panel-body">
+              <img src="img/res.jpg" alt="">
+              <table class = "table table-striped" >
+                 <tbody class="">
+                  <tr>
+                    <th>Sat / Kir</th>
+                    <th class="table-bilgi">Kiralık</th>
+                  </tr>
+                  <tr>
+                    <th>Fiyat</th>
+                    <th class="table-bilgi">999 TL</th>
+                  </tr>
+                  <tr>
+                    <th>Alan m2</th>
+                    <th class="table-bilgi">99 m2</th>
+                  </tr>
+                  <tr>
+                    <th>İl</th>
+                    <th class="table-bilgi">İstanbul</th>
+                  </tr>
+                  <tr>
+                    <th>İlçe</th>
+                    <th class="table-bilgi">GOP</th>
+                  </tr>
+                 </tbody>
+              </table>
+              <a href="detay.php?ilan_id=<?=$ilanid?>" class="btn btn-primary btn-block panel-btn-detay">Tüm Detaylar</a>
+            </div>
+          </div>
+        </div>  
+
+
+        
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
